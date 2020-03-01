@@ -1,0 +1,17 @@
+/* Main SCSS File */
+
+// Base
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+// Components
+@import 'default';
+@import 'elements';
+
+// Sections
+@import 'header';
+@import 'sections';
+@import 'footer';
+
+@import 'responsive';

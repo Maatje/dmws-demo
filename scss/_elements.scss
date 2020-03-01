@@ -1,0 +1,49 @@
+.arrow-down {
+	&:after {
+		content: url('../img/icons/arrow-down.svg');
+		margin-left: 4px;
+		position: relative;
+		top: -1px;
+	}
+}
+
+.btn {
+	background-color: $c_1;
+	border: none;
+	border-radius: $border-radius;
+	color: $c_1;
+	cursor: pointer;
+	font-weight: $f_wsb;
+	&.icon {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		height: 50px;
+		padding: 0 $spacing;
+		&.cart {
+			padding: 0 50px;
+		}
+		img {
+			margin-right: 7px;
+			max-height: 17px;
+		}
+	}
+}
+.btn-c2 {
+	background-color: $c_2;
+	color: $white;
+}
+.btn-grey {
+	background-color: $grey3;
+	border: 1px solid $grey2;
+	color: $grey;
+}
+
+ul {
+	li.check {
+		position: relative;
+		&:before {
+			@include check();
+		}
+	}
+}

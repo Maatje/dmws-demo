@@ -1,0 +1,55 @@
+// Define typography
+
+body {
+	color: $f_color;
+	font: $f_style $f_variant $f_weight $f_size $f_family;
+	line-height: $line-height;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: $f_wsb;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 22px;
+	font-weight: $f_wsb;
+}
+h3 {
+	font-size: 21px;
+	font-weight: $f_wsb;
+}
+
+a {
+	color: $f_color;
+	outline: 0;
+	text-decoration: none;
+	transition: $transition;
+}
+a:hover,
+a:focus {
+	color: $c_1;
+	text-decoration: none;
+}
+.wrapper-content a {
+	text-decoration: underline;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+input,
+select,
+textarea {
+	border: 1px solid $grey;
+	border-radius: $border-radius;
+	font-family: $f_family;
+	font-size: $f_size !important;
+	padding: $spacing/2 $spacing;
+}
+
+b, strong {
+	font-weight: $f_wsb;
+}

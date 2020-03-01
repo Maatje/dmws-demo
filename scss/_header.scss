@@ -1,0 +1,140 @@
+#top {
+	.main {
+		background-color: $c_1;
+		padding-bottom: $spacing/2;
+		padding-top: $spacing/2;
+		.top-nav {
+			&> div,
+			&> a {
+				align-items: center;
+				display: flex;
+			}
+			a {
+				color: $white;
+				text-shadow: $shadow;
+			}
+			.lang img {
+				margin-top: 4px;
+				min-width: 28px;
+				width: 30px;
+			}
+			.search {
+				position: relative;
+				input {
+					border: none;
+					width: 270px;
+				}
+				&:after {
+					content: url('../img/icons/search.svg');
+					position: absolute;
+					right: 16px;
+					top: 12px;
+				}
+			}
+			.count {
+				position: relative;
+				span {
+					align-items: center;
+					border-radius: 50%;
+					box-shadow: $shadow;
+					color: $white;
+					display: flex;
+					height: 20px;
+					justify-content: center;
+					position: absolute;
+					top: 0;
+					width: 20px;
+				}
+				&.wishlist {
+					span {
+						background-color: $c_1;
+						right: -12px;
+					}
+					img {
+						min-width: 21px;
+					}
+				}
+				&.cart {
+					span {
+						background-color: $black;
+						right: -10px;
+					}
+					img {
+						min-width: 26px;
+					}
+				}
+			}
+		}
+	}
+
+	#search {
+		border-bottom: 1px solid #F2F2F2;
+		.search {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			input {
+				border: none;
+				font-size: 12px !important;
+				padding: 8px 0;
+			}
+		}
+	}
+
+	#menu {
+		background-color: $blue2;
+		ul {
+			@include clear_ul();
+			align-items: center;
+			display: flex;
+			padding-bottom: $spacing;
+			padding-top: $spacing;
+			li {
+				&:not(:last-of-type) {
+					margin-right: 23px;
+				}
+				a {
+					color: $c_1;
+					font-weight: $f_wsb;
+				}
+			}
+		}
+	}
+
+	.usps {
+		ul {
+			@include clear_ul();
+			align-items: center;
+			display: flex;
+			padding-bottom: $spacing;
+			padding-top: 12px;
+			position: relative;
+			li {
+				&:not(:last-of-type) {
+					margin-right: $spacing*2;
+				}
+				&:first-of-type {
+					color: $c_2;
+				}
+				&:last-of-type {
+					align-items: center;
+					background-color: $c_2;
+					border-radius: 50%;
+					color: $white;
+					display: flex;
+					font-weight: $f_wsb;
+					justify-content: center;
+					position: absolute;
+					right: 0;
+					height: 32px;
+					width: 32px;
+					img {
+						position: absolute;
+						right: -18px;
+						top: -7px;
+					}
+				}
+			}
+		}
+	}
+}

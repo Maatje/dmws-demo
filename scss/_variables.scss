@@ -1,0 +1,42 @@
+// Colors
+$black: #282830;
+$grey: #6C6C7C;
+$grey2: #DADADA; // light
+$grey3: #F5F7FA; // lighter
+$grey4: #E5E5E5; // light
+$grey5: #C4C4C4;
+$white: #fff;
+
+$blue: #4FC1E9;
+$blue2: #F2FAFE; // light
+$blue3: #303C43; // dark
+$blue4: #28384A; // dark
+$blue5: #BAE3F8; // light
+$green: #48CFAD;
+$red: #ED5565;
+
+$c_1: $blue;
+$c_2: $green;
+
+// Typography
+$f_awesome: 'fontawesome';
+$f_awesome_5: 'Font Awesome\ 5 Free';
+$f_color: $black;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+$f_family: 'Poppins', Helvetica Neue, Helvetica, Arial, sans-serif;
+$f_style: normal;
+$f_variant: normal;
+$f_weight: 400;
+$f_wm: 500;
+$f_wsb: 600;
+$f_wb: 700;
+$f_web: 800;
+$f_size: 14px;
+$line-height: 2;
+
+// Other
+$border-radius: 4px;
+$shadow: 0 4px 4px rgba($black,0.25);
+$shadow_light: 0 4px 4px rgba($black,0.08);
+$spacing: 15px;
+$transition: 0.2s;

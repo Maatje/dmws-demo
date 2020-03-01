@@ -1,0 +1,276 @@
+@media (min-width: 1430px) {
+	.container {
+		max-width: 1400px;
+	}
+}
+
+@media (max-width: 1430px) {
+	#top {
+		#menu ul li {
+			&:not(:last-of-type) {
+				margin-right: $spacing;
+			}
+			a {
+				font-size: 13px;
+			}
+		}
+		.usps ul li:not(:last-of-type) {
+			margin-right: 20px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	body {
+		font-size: 13px;
+	}
+	#top #menu ul li a {
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 992px) {
+	.product .content .data,
+	#product-content .description .recommended {
+		padding-left: 0;
+	}
+	.product .content .gallery {
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	h3 {
+		font-size: 13px;
+	}
+
+	#top {
+		.main .top-nav .count {
+			&.wishlist span {
+				top: -10px;
+			}
+			&.cart span {
+				top: -8px;
+			}
+		}
+		.usps ul {
+			font-size: 11px;
+			justify-content: center;
+			padding-bottom: 5px;
+			padding-top: 8px;
+		}
+	}
+
+	.breadcrumbs ul li:before {
+		content: url('../img/icons/arrow-right.svg');
+		display: inline-block;
+		margin-right: 7.5px;
+		transform: rotate(180deg);
+	}
+
+	#main {
+		overflow-x: hidden;
+	}
+
+	.product {
+		.title h1 {
+			font-size: 16px;
+			line-height: 1.4;
+		}
+		.content {
+			.gallery .featured {
+				margin-bottom: 0;
+				margin-top: $spacing*2;
+				img {
+					max-width: 80%;
+				}
+			}
+			.data {
+				.price .for {
+					display: flex;
+					flex-direction: column;
+					font-size: 16px;
+					.hurry {
+						font-size: 12px;
+						margin-left: 0;
+						margin-top: 7px;
+					}
+				}
+				.variations {
+					.heading {
+						font-size: 13px;
+					}
+					select {
+						font-size: 12px !important;
+						padding-bottom: 8px;
+						padding-top: 8px;
+					}
+				}
+				.actions {
+					background: $white;
+					bottom: 0;
+					box-shadow: 2px 2px 50px rgba(#263F4D, 0.1);
+					left: 0;
+					padding: 10px 15px;
+					position: fixed;
+					width: 100%;
+					z-index: 2;
+				}
+				.usps ul li {
+					width: 100% !important;
+				}
+				.staffel {
+					.heading {
+						font-size: 13px;
+						line-height: 1.8;
+						span {
+							display: block;
+							font-size: 12px;
+						}
+					}
+					ul.group {
+						column-count: auto;
+						display: flex;
+						margin-left: -$spacing;
+						width: max-content;
+						li {
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+		}
+		.compare {
+			color: $grey;
+			margin-top: $spacing;
+		}
+	}
+
+	#product-content {
+		margin-top: $spacing*2;
+		.mobile-title {
+			color: $c_1;
+			margin-bottom: 10px;
+		}
+		a.more {
+			display: block;
+		}
+		.description {
+			margin-bottom: $spacing;
+			.points {
+				margin-bottom: $spacing;
+				padding-right: 0;
+				h3 {
+					margin-bottom: 10px;
+				}
+			}
+			.recommended {
+				margin-bottom: 30px;
+				.box {
+					box-shadow: none;
+					font-size: 12px;
+					padding: 0;
+					h4 {
+						font-size: 13px;
+					}
+					.action-wrapper {
+						padding-left: 0;
+						.price > div.deal,
+						.btn {
+							font-size: 13px;
+						}
+						.btn {
+							box-shadow: $shadow_light;
+						}
+					}
+				}
+			}
+		}
+		#specs {
+			border-bottom: 1px solid #E1E1E1;
+			border-top: 1px solid #E1E1E1;
+			margin-bottom: 20px;
+			padding: 20px 0 10px;
+			h3:after {
+				content: url('../img/icons/arrow-down-black.svg');
+				position: absolute;
+				right: $spacing;
+			}
+		}
+		#reviews {
+			margin-bottom: 20px;
+			.overview {
+				h3 {
+					color: $c_1;
+					&:after {
+						content: url('../img/icons/arrow-up-blue.svg');
+						position: absolute;
+						right: 0;
+					}
+				}
+				.rating {
+					flex-wrap: wrap;
+					font-size: 13px;
+					span {
+						font-size: 12px;
+						margin-left: 0;
+						width: 100%;
+					}
+				}
+				.btn {
+					display: inline-block;
+					margin-top: 10px;
+					position: relative;
+					top: 0;
+					transform: none;
+				}
+			}
+			.review {
+				flex-direction: column;
+				.rating,
+				.content,
+				.review-by {
+					text-align: left;
+					width: 100%;
+				}
+				.rating {
+					display: flex;
+					font-size: 13px;
+					margin-bottom: 4px;
+					img {
+						display: flex;
+						margin-right: 5px;
+						order: -1;
+					}
+				}
+				.review-by {
+					margin-top: 4px;
+				}
+			}
+		}
+		#accessoires {
+			padding: 35px 0;
+			.content p {
+				font-size: 16px;
+				margin-bottom: $spacing*2;
+			}
+			.articles .article {
+				flex-direction: column;
+				justify-content: space-around;
+				text-align: center;
+				min-width: 52%;
+				.description {
+					margin-left: 0;
+					.title {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+
+	footer .history .heading h3 {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+}
